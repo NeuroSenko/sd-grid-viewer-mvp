@@ -1,0 +1,66 @@
+html, body {
+  margin: 0;
+}
+
+.app-root {
+  position: relative;
+  font-family: sans-serif;
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(27, 512px);
+}
+
+.top-headers {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.5;
+  transition: 200ms ease-in opacity;
+}
+
+.top-headers:hover {
+  opacity: 1;
+}
+
+.left-headers {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  text-align: center;
+  transition: 200ms ease-in opacity;
+}
+
+.left-headers:hover {
+  opacity: 1;
+}
+
+.top-headers__item {
+  top: 0;
+  min-width: 512px;
+  height: 100%;
+  background: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.left-headers__item {
+  left: 0;
+  width: 100%;
+  height: 896px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
